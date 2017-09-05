@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body, input, select, button {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body, .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+p, input, select {
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+}
+
+.crypto, .fiat {
+    margin: 16px;
+}
+
+input, select {
+    border: 0;
+    border-bottom: 1px solid lightgrey;
+    padding: 8px;
+}
+
+input {
+    width: 64px;
+    min-width: 64px;
+    max-width: 168px;
+    margin-right: 16px;
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
