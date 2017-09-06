@@ -1,0 +1,11 @@
+{
+  "name": "convertieux",
+  "description": "Beautiful crypto to fiat conversions",
+  "repository": "https://github.com/awitherow/convertieux",
+  "keywords": [
+    "node",
+    "express",
+    "heroku"
+  ],
+  "image": "heroku/nodejs"
+}
