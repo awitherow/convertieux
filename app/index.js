@@ -14,6 +14,9 @@ app.get('/', function (req, res) {
 });
 
 app.get('/api/conversions', function (req, res) {
+  const Gdax = require('gdax');
+  const publicClient = new Gdax.PublicClient();
+
   // TODO: add coin conversion logic
   // - query coinbase
   // - for each coin get the coin/fiat price
