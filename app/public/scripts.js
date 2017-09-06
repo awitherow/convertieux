@@ -18,6 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
     cryptoSelect.addEventListener("change", handleSelect)
     fiatSelect.addEventListener("change", handleSelect)
 
+    setInterval(function () {
+        var url = "http://localhost:5000/api/conversions"
+        var myHeaders = new Headers();
+
+        var init = {
+            method: 'GET',
+            headers: myHeaders,
+            mode: 'cors',
+            cache: 'default'
+        };
+
+        fetch(url, init).then(function (r) {
+            return r.json()
+        }).then(function (r) {
+            console.log(r)
+        })
+    }, 5000)
+
     // TODO: for each exchange, 
     // - get crypto -> fiat && fiat -> crypto calculations
     // - save that to data then
